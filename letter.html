@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff1e9"><title>一封情书 · Our Little Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-shell page-shell">
+    <header class="site-header"><a class="site-logo" href="index.html" data-content="siteName">Our Little Universe</a><nav class="main-nav" aria-label="主导航"><a href="index.html">首页</a><a href="photos.html">照片墙</a><a href="timeline.html">时间轴</a><a class="active" href="letter.html">情书</a></nav><button class="music-toggle" id="musicToggle" type="button">♫ <span>播放音乐</span></button></header>
+    <main class="section-wrap subpage-main letter-main">
+      <div class="page-heading"><p class="eyebrow">A LETTER FOR YOU</p><h1>有些话，想慢慢说给你听</h1><p>这一页，只留给你。</p></div>
+      <button class="envelope" id="openLetter" type="button" aria-label="打开信封">
+        <span class="envelope-back"></span><span class="envelope-paper"><span>To my favorite person</span><b>♥</b></span><span class="envelope-flap"></span><span class="envelope-front"></span><span class="envelope-seal">♥</span>
+      </button>
+      <p class="envelope-hint" id="envelopeHint">点击信封，打开这封信</p>
+      <article class="letter-paper" id="letterPaper" hidden>
+        <p class="letter-date" id="letterDate"></p><h2 id="letterGreeting"></h2><div id="letterBody"></div><p class="letter-sign" id="letterSignature"></p>
+      </article>
+    </main>
+    <footer class="site-footer"><p>Made with love · Our Little Universe</p></footer>
+  </div>
+  <audio id="backgroundMusic" preload="none" loop></audio>
+  <script src="js/content.js"></script><script src="js/main.js"></script>
+</body>
+</html>

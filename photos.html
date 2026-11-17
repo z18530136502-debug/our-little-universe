@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff1e9"><title>照片墙 · Our Little Universe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="site-shell page-shell">
+    <header class="site-header">
+      <a class="site-logo" href="index.html" data-content="siteName">Our Little Universe</a>
+      <nav class="main-nav" aria-label="主导航"><a href="index.html">首页</a><a class="active" href="photos.html">照片墙</a><a href="timeline.html">时间轴</a><a href="letter.html">情书</a></nav>
+      <button class="music-toggle" id="musicToggle" type="button">♫ <span>播放音乐</span></button>
+    </header>
+    <main class="section-wrap subpage-main">
+      <div class="page-heading"><p class="eyebrow">OUR MOMENTS</p><h1>把日子收藏起来</h1><p>每一张照片，都是时间寄来的小礼物。</p></div>
+      <div class="filter-row" id="photoFilters" aria-label="照片分类"></div>
+      <div class="photo-grid" id="photoGrid"></div>
+    </main>
+    <footer class="site-footer"><p>Made with love · Our Little Universe</p></footer>
+  </div>
+  <div class="lightbox" id="lightbox" aria-hidden="true"><button class="lightbox-close" id="lightboxClose" aria-label="关闭">×</button><img id="lightboxImage" src="" alt=""><p id="lightboxCaption"></p></div>
+  <audio id="backgroundMusic" preload="none" loop></audio>
+  <script src="js/content.js"></script><script src="js/main.js"></script>
+</body>
+</html>
